@@ -106,31 +106,31 @@ class LinkedList:
         return self.head is None
 
 
-ll = LinkedList()
-
-# Тест 1: Удаление из пустого списка
-ll.delete(1)  # не должно быть ошибки
-print(f"Пустой: {ll.display()}")  # None
-
-# Тест 2: Добавляем и удаляем
-ll.append(1)
-ll.append(2)
-ll.append(3)
-ll.append(2)  # дубликат
-print(f"До удаления: {ll.display()}")  # 1->2->3->2->None
-
-# Тест 3: Удаление из середины
-ll.delete(2)
-print(f"После удаления первой 2: {ll.display()}")  # 1->3->2->None
-
-# Тест 4: Удаление головы
-ll.delete(1)
-print(f"После удаления головы: {ll.display()}")  # 3->2->None
-
-# Тест 5: Удаление последнего
-ll.delete(2)
-print(f"После удаления последнего: {ll.display()}")  # 3->None
-
-# Тест 6: Удаление единственного
-ll.delete(3)
-print(f"После удаления единственного: {ll.display()}")  # None
+# ll = LinkedList()
+#
+# # Тест 1: Удаление из пустого списка
+# ll.delete(1)  # не должно быть ошибки
+# print(f"Пустой: {ll.display()}")  # None
+#
+# # Тест 2: Добавляем и удаляем
+# ll.append(1)
+# ll.append(2)
+# ll.append(3)
+# ll.append(2)  # дубликат
+# print(f"До удаления: {ll.display()}")  # 1->2->3->2->None
+#
+# # Тест 3: Удаление из середины
+# ll.delete(2)
+# print(f"После удаления первой 2: {ll.display()}")  # 1->3->2->None
+#
+# # Тест 4: Удаление головы
+# ll.delete(1)
+# print(f"После удаления головы: {ll.display()}")  # 3->2->None
+#
+# # Тест 5: Удаление последнего
+# ll.delete(2)
+# print(f"После удаления последнего: {ll.display()}")  # 3->None
+#
+# # Тест 6: Удаление единственного
+# ll.delete(3)
+# print(f"После удаления единственного: {ll.display()}")  # None

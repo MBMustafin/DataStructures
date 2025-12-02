@@ -42,4 +42,14 @@ class StackLinkedList:
 
     def __str__(self):
         """Строковое представление стека"""
-        return self.items.display()
+        if self.is_empty():
+            return "StackLinkedList(empty)"
+
+        current = self.items.head
+        elem = []
+        while current:
+            elem.append(str(current.data))
+            current = current.next
+        elem.reverse()
+        return "<-".join(elem)
+
